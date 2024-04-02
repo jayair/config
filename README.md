@@ -21,7 +21,7 @@ Neovim + iTerm setup based on [kickstart.nvim](https://github.com/nvim-lua/kicks
 ## Usage
 
 ```
-git clone https://github.com/jayair/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+git clone https://github.com/jayair/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
 Start Neovim
