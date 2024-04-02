@@ -24,8 +24,7 @@ Neovim + iTerm setup based on [kickstart.nvim](https://github.com/nvim-lua/kicks
 git clone https://github.com/jayair/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
 ```
 
-Start Neovim
+### Load
 
-```sh
-nvim
-```
+1. Start Neovim `nvim`
+2. Init [copilot.lua](https://github.com/zbirenbaum/copilot.lua) `:Copilot auth`
