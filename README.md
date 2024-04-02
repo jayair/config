@@ -10,7 +10,7 @@ Neovim + iTerm setup based on [kickstart.nvim](https://github.com/nvim-lua/kicks
 
 ### Extra
 
-- Basic utils: `git`, `make`, `unzip`, C Compiler (`gcc`)
+- Basic utils: `git`, `make`, `unzip`, `gcc`
 - [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 
 ### Backup
