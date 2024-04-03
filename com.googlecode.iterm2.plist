@@ -944,6 +944,8 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Custom Window Title</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
@@ -1270,6 +1272,10 @@
 			<string>No</string>
 			<key>Custom Directory</key>
 			<string>Recycle</string>
+			<key>Custom Tab Title</key>
+			<string></string>
+			<key>Custom Window Title</key>
+			<string></string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Description</key>
@@ -1660,6 +1666,8 @@
 			<array/>
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
+			<key>Title Components</key>
+			<integer>6</integer>
 			<key>Transparency</key>
 			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
@@ -1668,6 +1676,10 @@
 			<true/>
 			<key>Use Bright Bold</key>
 			<true/>
+			<key>Use Custom Tab Title</key>
+			<false/>
+			<key>Use Custom Window Title</key>
+			<false/>
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
