@@ -190,32 +190,6 @@ vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right win
 vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
---
--- Custom config
---
-
--- Backups
-vim.opt.backup = false
-vim.opt.swapfile = false
-
--- Editing
--- vim.cmd([[
--- filetype plugin indent on
--- syntax on
--- ]])
-
--- Spaces
-vim.opt.tabstop = 2
-vim.opt.softtabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
-
--- Colors
-vim.opt.termguicolors = true
-
--- File browser
-vim.g.netrw_banner = 0
-
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
@@ -919,3 +893,38 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+--
+-- Custom config
+--
+
+-- Backups
+vim.opt.backup = false
+vim.opt.swapfile = false
+
+-- Editing
+-- vim.cmd([[
+-- filetype plugin indent on
+-- syntax on
+-- ]])
+
+-- Spaces
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+
+-- Colors
+vim.opt.termguicolors = true
+
+-- File browser
+vim.g.netrw_banner = 0
+
+-- Markdown mdx
+vim.filetype.add {
+  extension = {
+    mdx = 'markdown.mdx',
+  },
+  filename = {},
+  pattern = {},
+}
