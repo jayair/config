@@ -847,7 +847,7 @@ require('lazy').setup({
         suggestion = {
           auto_trigger = true,
           keymap = {
-            accept = '<Tab>',
+            accept = '<C-j>',
           },
         },
       }
