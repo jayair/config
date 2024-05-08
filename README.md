@@ -5,8 +5,23 @@ Neovim + iTerm setup based on [kickstart.nvim](https://github.com/nvim-lua/kicks
 ## Prerequisites
 
 1. Download [iTerm](https://iterm2.com) and [restore preferences](/com.googlecode.iterm2.plist).
+   - Enable _vim mode_, add the following to `.zshrc`.
+     ```
+     # vim mode
+     bindkey -v '^?' backward-delete-char
+     ```
 2. Download [Tokyo Night Moon](https://github.com/folke/tokyonight.nvim) for iTerm.
 3. Download the [RobotoMono Nerd Font](https://www.nerdfonts.com/font-downloads).
+
+### tmux
+
+Setup tmux and add vim bindings for moving between panes in iTerm.
+
+1. Install [tmux](https://github.com/tmux/tmux/wiki/Installing).
+   ```
+   brew install tmux
+   ```
+2. Move [`.tmux.conf`](/.tmux.conf) to `~/.tmux.conf`.
 
 ### Extra
 
