@@ -1,6 +1,6 @@
-# Neovim
+# Config
 
-Neovim + iTerm setup based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
+Neovim + iTerm + tmux setup based on [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim).
 
 ## Prerequisites
 
@@ -12,16 +12,10 @@ Neovim + iTerm setup based on [kickstart.nvim](https://github.com/nvim-lua/kicks
      ```
 2. Download [Tokyo Night Moon](https://github.com/folke/tokyonight.nvim) for iTerm.
 3. Download the [RobotoMono Nerd Font](https://www.nerdfonts.com/font-downloads).
-
-### tmux
-
-Setup tmux and add vim bindings for moving between panes in iTerm.
-
-1. Install [tmux](https://github.com/tmux/tmux/wiki/Installing).
+4. Install [tmux](https://github.com/tmux/tmux/wiki/Installing).
    ```
    brew install tmux
    ```
-2. Move [`.tmux.conf`](/.tmux.conf) to `~/.tmux.conf`.
 
 ### Extra
 
@@ -30,16 +24,21 @@ Setup tmux and add vim bindings for moving between panes in iTerm.
 
 ### Backup
 
-- Backup old config in `~/.config/nvim`
+- Backup old nvim config in `~/.config/nvim`
+- Backup old tmux config in `~/.config/tmux`
 - Remove old files `rm -rf ~/.local/share/nvim/`
 
 ## Usage
 
 ```
-git clone https://github.com/jayair/nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+cd ~/
+git clone https://github.com/jayair/config.git dotconfig
+ln -s dotconfig/nvim ~/.conig/nvim
+ln -s dotconfig/tmux ~/.conig/tmux
 ```
 
 ### Load
 
-1. Start Neovim `nvim`
-2. Init [copilot.lua](https://github.com/zbirenbaum/copilot.lua) `:Copilot auth`
+1. Start `tmux`
+2. Start `nvim`
+3. Init [copilot.lua](https://github.com/zbirenbaum/copilot.lua) `:Copilot auth`
