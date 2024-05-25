@@ -40,3 +40,9 @@ ln -s dotconfig/tmux ~/.conig/tmux
 1. Start `tmux`
 2. Start `nvim`
 3. Init [copilot.lua](https://github.com/zbirenbaum/copilot.lua) `:Copilot auth`
+
+### iTerm Config
+
+The iTerm config is backed up by going to Settings > General > Settings and selecting `~/dotconfig` and hitting **Save now**.
+
+![iTerm Settings](/iterm-settings.png)
