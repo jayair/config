@@ -902,6 +902,19 @@ require('lazy').setup({
     },
   },
 
+  -- nvim-tabline
+  {
+    'crispgm/nvim-tabline',
+    dependencies = { 'nvim-tree/nvim-web-devicons' }, -- optional
+    config = function()
+      require('tabline').setup {
+        show_icon = true,
+        show_index = false,
+        brackets = { '', '' },
+      }
+    end,
+  },
+
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
@@ -977,6 +990,9 @@ vim.filetype.add {
   filename = {},
   pattern = {},
 }
+
+-- Keymaps
+vim.keymap.set('n', '<leader>t', '<cmd>tabnew<cr>', { desc = 'New [T]ab' })
 
 -- Toggle format on save
 vim.api.nvim_create_user_command('FormatDisable', function(args)
