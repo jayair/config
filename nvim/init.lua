@@ -993,6 +993,7 @@ vim.filetype.add {
 
 -- Keymaps
 vim.keymap.set('n', '<leader>t', '<cmd>tabnew<cr>', { desc = 'New [T]ab' })
+vim.keymap.set('x', '<leader>p', '"_dP', { desc = '[P]aste without yank', noremap = true, silent = true })
 
 -- Toggle format on save
 vim.api.nvim_create_user_command('FormatDisable', function(args)
