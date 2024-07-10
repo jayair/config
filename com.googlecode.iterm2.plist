@@ -352,6 +352,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>03844A8C-D7B3-4225-B29C-87D578C8B3D1</string>
+	<key>EnableDivisionView</key>
+	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
 		<key>0x19-0x60000</key>
@@ -2586,6 +2588,8 @@
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>VisualIndicatorForEsc</key>
+	<false/>
+	<key>WindowNumber</key>
 	<false/>
 </dict>
 </plist>
