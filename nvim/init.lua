@@ -867,19 +867,34 @@ require('lazy').setup({
   },
 
   -- GitHub Copilot
+  -- {
+  --   'zbirenbaum/copilot.lua',
+  --   cmd = 'Copilot',
+  --   event = 'InsertEnter',
+  --   config = function()
+  --     require('copilot').setup {
+  --       suggestion = {
+  --         auto_trigger = true,
+  --         keymap = {
+  --           accept = '<C-j>',
+  --         },
+  --       },
+  --     }
+  --   end,
+  -- },
+
+  -- Supermaven
   {
-    'zbirenbaum/copilot.lua',
-    cmd = 'Copilot',
-    event = 'InsertEnter',
+    'supermaven-inc/supermaven-nvim',
     config = function()
-      require('copilot').setup {
-        suggestion = {
-          auto_trigger = true,
-          keymap = {
-            accept = '<C-j>',
-          },
+      require('supermaven-nvim').setup {
+        keymaps = {
+          accept_suggestion = '<C-j>',
+          clear_suggestion = '<C-]>',
+          accept_word = '<nop>',
         },
       }
+      require('supermaven-nvim.api').use_free_version()
     end,
   },
 
