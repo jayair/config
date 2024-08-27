@@ -890,8 +890,8 @@ require('lazy').setup({
       require('supermaven-nvim').setup {
         keymaps = {
           accept_suggestion = '<C-j>',
-          clear_suggestion = '<C-]>',
-          accept_word = '<nop>',
+          clear_suggestion = '<nop>',
+          accept_word = '<C-]>',
         },
       }
       require('supermaven-nvim.api').use_free_version()
