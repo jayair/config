@@ -624,12 +624,12 @@ require('lazy').setup({
     lazy = false,
     keys = {
       {
-        '<leader>f',
+        '<leader>i',
         function()
           require('conform').format { async = true, lsp_fallback = true }
         end,
         mode = '',
-        desc = '[F]ormat buffer',
+        desc = '[I]ndent buffer',
       },
     },
     opts = {
@@ -1005,6 +1005,9 @@ vim.filetype.add {
 -- Keymaps
 vim.keymap.set('n', '<leader>t', '<cmd>tabnew<cr>', { desc = 'New [T]ab' })
 vim.keymap.set('x', '<leader>p', '"_dP', { desc = '[P]aste without yank', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>fe', ':Ex<CR>', { desc = '[F]ile explorer', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>fs', ':Sex<CR>', { desc = '[F]ile explorer [s]plit', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>fv', ':Vex<CR>', { desc = '[F]ile explorer [v]ertical split', noremap = true, silent = true })
 
 -- Toggle format on save
 vim.api.nvim_create_user_command('FormatDisable', function(args)
