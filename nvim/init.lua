@@ -941,6 +941,7 @@ require('lazy').setup({
   -- require 'kickstart.plugins.autopairs',
   -- require 'kickstart.plugins.neo-tree',
   -- require 'kickstart.plugins.gitsigns', -- adds gitsigns recommend keymaps
+  require 'kickstart.plugins.oil',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
@@ -1003,11 +1004,17 @@ vim.filetype.add {
 }
 
 -- Keymaps
-vim.keymap.set('n', '<leader>t', '<cmd>tabnew<cr>', { desc = 'New [T]ab' })
-vim.keymap.set('x', '<leader>p', '"_dP', { desc = '[P]aste without yank', noremap = true, silent = true })
-vim.keymap.set('n', '<leader>fe', ':Ex<CR>', { desc = '[F]ile explorer', noremap = true, silent = true })
-vim.keymap.set('n', '<leader>fs', ':Sex<CR>', { desc = '[F]ile explorer [s]plit', noremap = true, silent = true })
-vim.keymap.set('n', '<leader>fv', ':Vex<CR>', { desc = '[F]ile explorer [v]ertical split', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>t', '<cmd>tabnew<cr>', { desc = 'New [T]ab', silent = true })
+vim.keymap.set('x', '<leader>p', '"_dP', { desc = '[P]aste without yank', silent = true })
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory', silent = true })
+vim.keymap.set('n', '<leader>fs', '<CMD>split | Oil<CR>', {
+  desc = '[F]ile explorer [s]plit',
+  silent = true,
+})
+vim.keymap.set('n', '<leader>fv', '<CMD>vsplit | Oil<CR>', {
+  desc = '[F]ile explorer [v]ertical split',
+  silent = true,
+})
 
 -- Toggle format on save
 vim.api.nvim_create_user_command('FormatDisable', function(args)
