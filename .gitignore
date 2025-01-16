@@ -1,6 +1,7 @@
 tags
 test.sh
 .luarc.json
+.DS_Store
 
 spell/
 lazy-lock.json
