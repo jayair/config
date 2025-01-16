@@ -1,1 +1,6 @@
+auto-update = download
 theme = tokyonight_moon
+macos-titlebar-style = tabs
+
+keybind = command+right=next_tab
+keybind = command+left=previous_tab
