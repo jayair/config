@@ -1,3 +1,4 @@
+font-feature = -calt
 auto-update = download
 theme = tokyonight_moon
 macos-titlebar-style = tabs
