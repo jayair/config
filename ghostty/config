@@ -5,3 +5,5 @@ macos-titlebar-style = tabs
 
 keybind = command+right=next_tab
 keybind = command+left=previous_tab
+
+window-save-state = always
