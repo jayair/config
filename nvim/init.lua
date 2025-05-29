@@ -1005,6 +1005,7 @@ vim.filetype.add {
 
 -- Keymaps
 vim.keymap.set('n', '<leader>t', '<cmd>tabnew<cr>', { desc = 'New [T]ab', silent = true })
+vim.keymap.set('n', 'gp', '`[v`]', { desc = 'Select previous paste', silent = true })
 vim.keymap.set('x', '<leader>p', '"_dP', { desc = '[P]aste without yank', silent = true })
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory', silent = true })
 vim.keymap.set('n', '<leader>fs', '<CMD>split | Oil<CR>', {
