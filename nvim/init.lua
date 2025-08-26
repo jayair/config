@@ -572,6 +572,17 @@ require('lazy').setup({
 
         dockerls = {},
 
+        jsonls = {
+          settings = {
+            json = {
+              validate = { enable = true },
+            },
+            jsonc = {
+              validate = { enable = true },
+            },
+          },
+        },
+
         lua_ls = {
           -- cmd = {...},
           -- filetypes = { ...},
