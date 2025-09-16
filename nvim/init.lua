@@ -651,6 +651,7 @@ require('lazy').setup({
           return
         end
         return {
+          quiet = true,
           timeout_ms = 500,
           lsp_format = 'never',
         }
